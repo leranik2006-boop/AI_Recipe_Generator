@@ -110,3 +110,30 @@ The application validates user input, checks the structure of the returned recip
 - OpenAI API
 - python-dotenv
 - JSON
+
+
+## Bonus: Streamlit Web Interface
+
+This project also includes a graphical web interface built with Streamlit.
+
+The web interface allows users to enter ingredients, choose dietary preferences, specify cooking time and servings, and generate three AI-powered recipes.
+
+### Run the Web Application
+
+After installing the dependencies and configuring the `.env` file, run:
+
+```bash
+python -m streamlit run app.py
+```
+
+Open `http://localhost:8501` in your browser.
+
+The web application displays recipe ingredients, missing items, step-by-step cooking instructions, and estimated cooking times.
+
+The original command-line application is still available:
+
+```bash
+python main.py
+```
+
+**Note:** An OpenAI API key is required, and API usage may incur charges.
